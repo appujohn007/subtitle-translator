@@ -6,7 +6,7 @@
 2. run  `pip instasll googletrans==3.1.0a0`  
 3. run `main.py` and fill all required fields***.  
 
-*Tested on Python version 3.12.4  
+*Tested on Python version 3.12.4 but **may** work on others  
 **Works on any text file and not only .srt  
 ***The language field should be one of the language codes listed in `googletrans.LANGUAGES` or one of the language names listed in `googletrans.LANGCODES`.  
 
