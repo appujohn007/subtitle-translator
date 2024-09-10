@@ -3,11 +3,12 @@ import os
 
 
 class Translate:
-    def __init__(self, input_file: str, max_length: int = 2000, language: str = "en"):
+    def __init__(self, input_file: str, language: str = "en"):
         pass
+        self.max_length = 2000, 
         self.translator = Translator()
         self.input_file = input_file
-        self.whole_file = open(f"{input_file}-en.srt", "w", encoding="utf-8")
+        self.whole_file = open(f"{input_file}-{language}.srt", "w", encoding="utf-8")
         self.max_length = max_length
         self.language = language
 
@@ -54,7 +55,6 @@ class Translate:
 def Main():
     t = Translate(
         input_file=input("Your str file name (with the str extension) -> "),
-        max_length=2000,  # you can change for your preference
         language=input("Your desired language -> "),
     )
     t.main()
