@@ -5,7 +5,7 @@ import os
 class Translate:
     def __init__(self, input_file: str, language: str = "en"):
         pass
-        self.max_length = 2000, 
+        max_length = 2000, 
         self.translator = Translator()
         self.input_file = input_file
         self.whole_file = open(f"{input_file}-{language}.srt", "w", encoding="utf-8")
